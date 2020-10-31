@@ -1,45 +1,40 @@
 ﻿using System;
 
-namespace Calculator.App
+class Program
 {
-	class Program
-	{
-		static void Main(string[] args)
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Intrudu primul termen");
+        string primulTermen = Console.ReadLine();
+
+        Console.WriteLine("Intrudu al doilea termen");
+        string alDoileaTermen = Console.ReadLine();
+
+        Console.WriteLine("Pentru operatia + tasteaza a");
+        Console.WriteLine("Pentru operatia - tasteaza b");
+        Console.WriteLine("Pentru operatia * tasteaza c");
+        Console.WriteLine("Pentru operatia / tasteaza d");
+
+        string operatia = Console.ReadLine();
+
+        switch (operatia)
         {
-            Console.WriteLine("Introdu primul numar:");
-            string primulNumar = Console.ReadLine();
-
-            Console.WriteLine("Introdu al doilea numar:");
-            string alDoileaNumar = Console.ReadLine();
-
-            Console.WriteLine("Pentru operatia \"Adunarea\" tasteaza \"a\"");
-            Console.WriteLine("Pentru operatia \"Scaderea\" tasteaza \"b\"");
-            Console.WriteLine("Pentru operatia \"Inmultirea\" tasteaza \"c\"");
-            Console.WriteLine("Pentru operatia \"Impartirea\" tasteaza \"d\"");
-
-            string operatia = Console.ReadLine();
-
-            Console.WriteLine("se afiseazul rezultatul");
-            if (operatia == "a")
-            {
-                int resultatul = Convert.ToInt32(primulNumar) + Convert.ToInt32(alDoileaNumar);
-                Console.WriteLine(resultatul);
-            }
-            if (operatia == "b")
-            {
-                int resultatul = Convert.ToInt32(primulNumar) - Convert.ToInt32(alDoileaNumar);
-                Console.WriteLine(resultatul);
-            }
-            if (operatia == "c")
-            {
-                int resultatul = Convert.ToInt32(primulNumar) * Convert.ToInt32(alDoileaNumar);
-                Console.WriteLine(resultatul);
-            }
-            if (operatia == "d")
-            {
-                int resultatul = Convert.ToInt32(primulNumar) / Convert.ToInt32(alDoileaNumar);
-                Console.WriteLine(resultatul);
-            }
+            case "a":
+                int suma = Convert.ToInt32(primulTermen) + Convert.ToInt32(alDoileaTermen);
+                Console.WriteLine("Rezultatul este" + suma);
+                break;
+            case "b":
+                int scaderea = Convert.ToInt32(primulTermen) - Convert.ToInt32(alDoileaTermen);
+                Console.WriteLine("Rezultatul este" + scaderea);
+                break;
+            case "c":
+                int inmultirea = Convert.ToInt32(primulTermen) * Convert.ToInt32(alDoileaTermen);
+                Console.WriteLine("Rezultatul este" + inmultirea);
+                break;
+            case "d":
+                int impatirea = Convert.ToInt32(primulTermen) / Convert.ToInt32(alDoileaTermen);
+                Console.WriteLine("Rezultatul este" + impatirea);
+                break;
         }
-	}
+    }
 }
