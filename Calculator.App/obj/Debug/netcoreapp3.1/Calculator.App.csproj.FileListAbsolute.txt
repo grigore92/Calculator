@@ -10,3 +10,4 @@ D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.dll
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.pdb
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.genruntimeconfig.cache
+D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.csprojAssemblyReference.cache

@@ -2,39 +2,60 @@
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Intrudu primul termen");
-        string primulTermen = Console.ReadLine();
+        Console.WriteLine("Introdu primul numar");
+        int primulTermen = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introdu al doilea numar");
+        int alDoileaTermen = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Intrudu al doilea termen");
-        string alDoileaTermen = Console.ReadLine();
-
-        Console.WriteLine("Pentru operatia + tasteaza a");
-        Console.WriteLine("Pentru operatia - tasteaza b");
-        Console.WriteLine("Pentru operatia * tasteaza c");
-        Console.WriteLine("Pentru operatia / tasteaza d");
-
+        Console.WriteLine("Pentru adunare apasa tasta A");
+        Console.WriteLine("Pentru scadere apasa tasta B");
+        Console.WriteLine("Pentru inmultire apasa tasta C");
+        Console.WriteLine("Pentru impartie apasa tasta D");
         string operatia = Console.ReadLine();
 
-        switch (operatia)
+        Console.WriteLine("pentru insturctiunea if apasa X");
+        Console.WriteLine("pentru insturctiunea Swich apasa y");
+        string instructiuneaAleasa = Console.ReadLine();
+
+        if (instructiuneaAleasa == "x")
         {
-            case "a":
-                int suma = Convert.ToInt32(primulTermen) + Convert.ToInt32(alDoileaTermen);
-                Console.WriteLine("Rezultatul este" + suma);
-                break;
-            case "b":
-                int scaderea = Convert.ToInt32(primulTermen) - Convert.ToInt32(alDoileaTermen);
-                Console.WriteLine("Rezultatul este" + scaderea);
-                break;
-            case "c":
-                int inmultirea = Convert.ToInt32(primulTermen) * Convert.ToInt32(alDoileaTermen);
-                Console.WriteLine("Rezultatul este" + inmultirea);
-                break;
-            case "d":
-                int impatirea = Convert.ToInt32(primulTermen) / Convert.ToInt32(alDoileaTermen);
-                Console.WriteLine("Rezultatul este" + impatirea);
-                break;
+            if (operatia == "A")
+            {
+                int suma = primulTermen + alDoileaTermen;
+                Console.WriteLine("Rezultatul operatie este " + suma);
+            }
+            if (operatia == "B")
+            {
+                int suma = primulTermen - alDoileaTermen;
+                Console.WriteLine("Rezultatul operatie este " + suma);
+            }
+            if (operatia == "C")
+            {
+                int suma = primulTermen * alDoileaTermen;
+                Console.WriteLine("Rezultatul operatie este " + suma);
+            }
+            if (operatia == "D")
+            {
+                int suma = primulTermen / alDoileaTermen;
+                Console.WriteLine("Rezultatul operatie este " + suma);
+            }
+
+        }
+        if(instructiuneaAleasa == "Y")
+        {
+            switch (operatia)
+            { 
+             case 
+            
+            
+            
+            
+            }
+
+
+
+        }
         }
     }
-}
