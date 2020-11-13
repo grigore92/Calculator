@@ -4,7 +4,6 @@ D:\Curs Programare\Calculator\Calculator.App\bin\Debug\netcoreapp3.1\Calculator.
 D:\Curs Programare\Calculator\Calculator.App\bin\Debug\netcoreapp3.1\Calculator.App.runtimeconfig.dev.json
 D:\Curs Programare\Calculator\Calculator.App\bin\Debug\netcoreapp3.1\Calculator.App.dll
 D:\Curs Programare\Calculator\Calculator.App\bin\Debug\netcoreapp3.1\Calculator.App.pdb
-D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.csprojAssemblyReference.cache
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.AssemblyInfoInputs.cache
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.AssemblyInfo.cs
 D:\Curs Programare\Calculator\Calculator.App\obj\Debug\netcoreapp3.1\Calculator.App.csproj.CoreCompileInputs.cache
