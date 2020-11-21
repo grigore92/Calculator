@@ -43,19 +43,28 @@ class Program
             }
 
         }
-        if(instructiuneaAleasa == "Y")
+        if (instructiuneaAleasa == "Y")
         {
             switch (operatia)
-            { 
-             case 
-            
-            
-            
-            
+            {
+                case "A":
+                    int suma = primulTermen + alDoileaTermen;
+                    Console.WriteLine("Rezultatul operatie este " + suma);
+                    break;
+                case "B":
+                    int scaderea = primulTermen - alDoileaTermen;
+                    Console.WriteLine("Rezultatul operatiei este " + scaderea);
+                    break;
+                case "C":
+                    int imultirea = primulTermen * alDoileaTermen;
+                    Console.WriteLine("Rezultatul operatiei este " + imultirea);
+                    break;
+                case "D":
+                    int impartirea = primulTermen / alDoileaTermen;
+                    Console.WriteLine("Rezultatul operatiei este " + impartirea + ". FELICITARI");
+                    //Console.WriteLine("Rezultatul operatiei este 25.FELICITARI");
+                    break;
             }
-
-
-
-        }
         }
     }
+}
