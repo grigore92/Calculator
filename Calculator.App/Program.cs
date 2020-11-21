@@ -62,7 +62,6 @@ class Program
                 case "D":
                     int impartirea = primulTermen / alDoileaTermen;
                     Console.WriteLine("Rezultatul operatiei este " + impartirea + ". FELICITARI");
-                    //Console.WriteLine("Rezultatul operatiei este 25.FELICITARI");
                     break;
             }
         }
