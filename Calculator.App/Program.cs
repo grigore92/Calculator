@@ -4,22 +4,22 @@ class Program
 {
     static void Main()
     {
+
         int primulTermen = Program.IntroducereaPrimuluiTermen();
         int alDoileaTermen = Program.IntroduAlDoileaTermen();
+        string operatia = Program.SelectareaOperatiei();
+        string instructiuneaAleasa = Program.InstructiuneaAleasa();
 
-        string operatia = Program.SelectareaOperatiilor();
-        string instructiuneaAleasa = Program.SelecteazaInstructiuneaDorita();
 
         if (instructiuneaAleasa == "x")
         {
-            Program.CalcululCuAjutorulInstructiuniiIf(operatia, primulTermen, alDoileaTermen);
+            Program.CalcululCuAjutorulInstructiuniiif(primulTermen, alDoileaTermen,operatia);
         }
-
         if (instructiuneaAleasa == "y")
         {
-            Program.CalcululCuAjutorulInstructiuniiSwich(operatia, primulTermen, alDoileaTermen);
+            Program.CalcululCuAjutotulInstructiuniiswitch(primulTermen, alDoileaTermen, operatia);
         }
-    } 
+    }
     public static int IntroducereaPrimuluiTermen()
     {
         Console.WriteLine("Introdu primul numar");
@@ -32,9 +32,7 @@ class Program
         int alDoileaTermen = Convert.ToInt32(Console.ReadLine());
         return alDoileaTermen;
     }
-
-    // Ce face acest rand? 
-    public static string SelectareaOperatiilor()
+    public static string SelectareaOperatiei()
     {
         Console.WriteLine("Pentru adunare apasa tasta A");
         Console.WriteLine("Pentru scadere apasa tasta B");
@@ -43,73 +41,65 @@ class Program
         string operatia = Console.ReadLine();
         return operatia;
     }
-    public static string SelecteazaInstructiuneaDorita()
+    public static string InstructiuneaAleasa()
     {
         Console.WriteLine("pentru insturctiunea if apasa X");
         Console.WriteLine("pentru insturctiunea Swich apasa y");
         string instructiuneaAleasa = Console.ReadLine();
         return instructiuneaAleasa;
     }
-        // Aici ai indicat gresit lista de parametri; nu parametrii, ci parantezele sunt indicate gresit.
-    public static void CalcululCuAjutorulInstructiuniiIf(string operatiaPrimita, int primulTermeneSelecat, int alDoileaTermenSelectat)
+    public static void CalcululCuAjutorulInstructiuniiif(int primulTermen, int alDoileaTermen, string operatia)
     {
-        // In toate aceste 4 if-uri folosesti o variabila inexistenta. 
-        if (operatiaPrimita == "A")
+        if (operatia == "A")
         {
-            
-            int suma = primulTermeneSelecat + alDoileaTermenSelectat;
+
+            int suma = primulTermen + alDoileaTermen;
             Console.WriteLine("Rezultatul operatie este " + suma);
         }
-        if (operatiaPrimita == "B")
+        if (operatia == "B")
         {
-            
-            int suma = primulTermeneSelecat - alDoileaTermenSelectat;
+
+            int suma = primulTermen - alDoileaTermen;
             Console.WriteLine("Rezultatul operatie este " + suma);
         }
-        if (operatiaPrimita == "C")
+        if (operatia == "C")
         {
-           
-            int suma = primulTermeneSelecat * alDoileaTermenSelectat;
+
+            int suma = primulTermen * alDoileaTermen;
             Console.WriteLine("Rezultatul operatie este " + suma);
         }
-        if (operatiaPrimita == "D")
+        if (operatia == "D")
         {
-            
-            int suma = primulTermeneSelecat / alDoileaTermenSelectat;
+
+            int suma = primulTermen / alDoileaTermen;
             Console.WriteLine("Rezultatul operatie este " + suma);
         }
     }
-    public static void CalcululCuAjutorulInstructiuniiSwich(string operatiaPrimita, int primulTermenSelectat, int alDoileaTermenSelectat)
+    public static void CalcululCuAjutotulInstructiuniiswitch(int primulTermen, int alDoileaTermen, string operatia)
     {
-        // Folosesti o variabila inexistenta.
-        switch (operatiaPrimita)
+
+        switch (operatia)
         {
 
             case "A":
-                int suma = primulTermenSelectat + alDoileaTermenSelectat;
+                int suma = primulTermen + alDoileaTermen;
                 Console.WriteLine("Rezultatul operatie este " + suma);
                 break;
             case "B":
-                int scaderea = primulTermenSelectat - alDoileaTermenSelectat;
+                int scaderea = primulTermen - alDoileaTermen;
                 Console.WriteLine("Rezultatul operatiei este " + scaderea);
                 break;
             case "C":
-                int imultirea = primulTermenSelectat * alDoileaTermenSelectat;
+                int imultirea = primulTermen * alDoileaTermen;
                 Console.WriteLine("Rezultatul operatiei este " + imultirea);
                 break;
             case "D":
-                int impartirea = primulTermenSelectat / alDoileaTermenSelectat;
+                int impartirea = primulTermen / alDoileaTermen;
                 Console.WriteLine("Rezultatul operatiei este " + impartirea + ". FELICITARI");
                 break;
         }
     }
 }
-
-
-
-
-
-
 
 
 
