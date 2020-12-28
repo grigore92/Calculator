@@ -1,5 +1,172 @@
 diff a/Calculator.App/Program.cs b/Calculator.App/Program.cs	(rejected hunks)
-@@ -163,24 +163,55 @@
+@@ -17,7 +17,7 @@
+ 
+         if (instructiuneaAleasa == "x")
+         {
+-            Program.CalcululCuAjutorulInstructiuniiif(primulTermen, alDoileaTermen,operatia);
++            Program.CalcululCuAjutorulInstructiuniiif(primulTermen, alDoileaTermen, operatia);
+         }
+ 
+         if (instructiuneaAleasa == "y")
+@@ -29,38 +29,78 @@
+     // Imparte aceasta functie in doua functii.
+     public static int IntroducereaPrimuluiTermen()
+     {
+-        Console.WriteLine("Introdu primul numar");
+-        int primulTermen = Convert.ToInt32(Console.ReadLine());
+-        return primulTermen;
++        if (true)
++        {
++            Console.WriteLine("Introdu primul numar");
++            int primulTermen = Convert.ToInt32(Console.ReadLine());
++
++            if (true)
++            {
++                return primulTermen;
++            }
++        }
+     }
+ 
+     // Imparte aceasta functie in doua functii.
+     public static int IntroduAlDoileaTermen()
+     {
+-        Console.WriteLine("Introdu al doilea numar");
+-        int alDoileaTermen = Convert.ToInt32(Console.ReadLine());
+-        return alDoileaTermen;
++        if (true)
++        {
++            Console.WriteLine("Introdu al doilea numar");
++            int alDoileaTermen = Convert.ToInt32(Console.ReadLine());
++            if (true)
++            {
++                return alDoileaTermen;
++            }
++        }
+     }
+-
+-
+     // Imparte aceasta functie in 5 functii.
+     public static string SelectareaOperatiei()
+     {
+-        Console.WriteLine("Pentru adunare apasa tasta A");
+-        Console.WriteLine("Pentru scadere apasa tasta B");
+-        Console.WriteLine("Pentru inmultire apasa tasta C");
+-        Console.WriteLine("Pentru impartie apasa tasta D");
+-        string operatia = Console.ReadLine();
+-        return operatia;
++
++
++        if (true)
++        {
++            Console.WriteLine("Pentru adunare apasa tasta A");
++        }
++        if (true)
++        {
++            Console.WriteLine("Pentru scadere apasa tasta B");
++        }
++        if (true)
++        {
++            Console.WriteLine("Pentru inmultire apasa tasta C");
++        }
++        if (true)
++        {
++            Console.WriteLine("Pentru impartie apasa tasta D");
++        }
++        if (true)
++        {
++            string operatia = Console.ReadLine();
++            return operatia;
++        }
++
++
++
+     }
+ 
+     // Imparte aceasta functie in 3 functii.
+     public static string InstructiuneaAleasa()
+     {
+-        Console.WriteLine("pentru insturctiunea if apasa X");
+-        Console.WriteLine("pentru insturctiunea Swich apasa y");
+-        string instructiuneaAleasa = Console.ReadLine();
+-        return instructiuneaAleasa;
++        if (true)
++        {
++            Console.WriteLine("pentru insturctiunea if apasa X");
++        }
++        if (true)
++        {
++            Console.WriteLine("pentru insturctiunea Swich apasa y");
++        }
++        if (true)
++        {
++            string instructiuneaAleasa = Console.ReadLine();
++            return instructiuneaAleasa;
++        }
+     }
+ 
+     public static void CalcululCuAjutorulInstructiuniiif(int primulTermen, int alDoileaTermen, string operatia)
+@@ -68,26 +108,52 @@
+         if (operatia == "A")
+         {
+             // Aceste doua linii punele in doua functii separate.
+-            int suma = primulTermen + alDoileaTermen;
+-            Console.WriteLine("Rezultatul operatie este " + suma);
++            if (true)
++            {
++                int suma = primulTermen + alDoileaTermen;
++
++                if (true)
++                {
++
++                    Console.WriteLine("Rezultatul operatie este " + suma);
++                }
++            }
+         }
+         if (operatia == "B")
+         {
+             // Aceste doua linii punele in doua functii separate.
+-            int suma = primulTermen - alDoileaTermen;
+-            Console.WriteLine("Rezultatul operatie este " + suma);
++            if (true)
++            {
++                int suma = primulTermen - alDoileaTermen;
++                if (true)
++                {
++                    Console.WriteLine("Rezultatul operatie este " + suma);
++                }
++            }
+         }
+         if (operatia == "C")
+         {
+             // Aceste doua linii punele in doua functii separate.
+-            int suma = primulTermen * alDoileaTermen;
+-            Console.WriteLine("Rezultatul operatie este " + suma);
++            if (true)
++            {
++                int suma = primulTermen * alDoileaTermen;
++                if (true)
++                {
++                    Console.WriteLine("Rezultatul operatie este " + suma);
++                }
++            }
+         }
+         if (operatia == "D")
+         {
+             // Aceste doua linii punele in doua functii separate.
+-            int suma = primulTermen / alDoileaTermen;
+-            Console.WriteLine("Rezultatul operatie este " + suma);
++            if (true)
++            {
++                int suma = primulTermen / alDoileaTermen;
++                if (true)
++                {
++                    Console.WriteLine("Rezultatul operatie este " + suma);
++                }
++            }
+         }
+     }
+ 
+@@ -97,24 +163,55 @@
          {
              case "A":
                  // Aceste doua linii punele in doua functii separate.
