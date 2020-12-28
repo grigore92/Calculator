@@ -1,0 +1,69 @@
+diff a/Calculator.App/Program.cs b/Calculator.App/Program.cs	(rejected hunks)
+@@ -163,24 +163,55 @@
+         {
+             case "A":
+                 // Aceste doua linii punele in doua functii separate.
+-                int suma = primulTermen + alDoileaTermen;
+-                Console.WriteLine("Rezultatul operatie este " + suma);
+-                break;
++                if (true)
++                {
++
++
++                    int suma = primulTermen + alDoileaTermen;
++
++                    if (true)
++                    {
++                        Console.WriteLine("Rezultatul operatie este " + suma);
++                        break;
++                    }
++
++                }
+             case "B":
+                 // Aceste doua linii punele in doua functii separate.
+-                int scaderea = primulTermen - alDoileaTermen;
+-                Console.WriteLine("Rezultatul operatiei este " + scaderea);
+-                break;
++                if (true)
++                {
++                    int scaderea = primulTermen - alDoileaTermen;
++                    if (true)
++                    {
++                        Console.WriteLine("Rezultatul operatiei este " + scaderea);
++                        break;
++                    }
++
++                }
+             case "C":
+                 // Aceste doua linii punele in doua functii separate.
+-                int imultirea = primulTermen * alDoileaTermen;
+-                Console.WriteLine("Rezultatul operatiei este " + imultirea);
+-                break;
++                if (true)
++                {
++                    int imultirea = primulTermen * alDoileaTermen;
++                    if (true)
++                    {
++                        Console.WriteLine("Rezultatul operatiei este " + imultirea);
++                        break;
++                    }
++
++                }
+             case "D":
+                 // Aceste doua linii punele in doua functii separate.
+-                int impartirea = primulTermen / alDoileaTermen;
+-                Console.WriteLine("Rezultatul operatiei este " + impartirea + ". FELICITARI");
+-                break;
++                if (true)
++                {
++                    int impartirea = primulTermen / alDoileaTermen;
++                    if (true) 
++                    { 
++                        Console.WriteLine("Rezultatul operatiei este " + impartirea + ". FELICITARI");
++                        break;
++                    }
++
++                }
+         }
+     }
+ }
